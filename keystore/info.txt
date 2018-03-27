@@ -1,0 +1,46 @@
+别名   foreoasian
+
+密码： foreo|1234
+
+valiate  25 years
+
+first and last name   foreo
+
+organizatal unit      FOREO
+
+organization          FOREO
+
+city or locaality     SH
+
+
+别名: foreoasian
+创建日期: 2017-12-28
+条目类型: PrivateKeyEntry
+证书链长度: 1
+证书[1]:
+所有者: CN=Foreo, OU=FOREO, O=FOREO, L=SH, ST=SH, C=021
+发布者: CN=Foreo, OU=FOREO, O=FOREO, L=SH, ST=SH, C=021
+序列号: 69c18194
+有效期开始日期: Thu Dec 28 16:52:39 CST 2017, 截止日期: Mon Dec 22 16:52:39 CST 2042
+证书指纹:
+         MD5: 4B:C8:C2:75:1C:08:CA:85:49:C5:0D:29:53:0C:BD:E7
+         SHA1: 08:83:26:C6:92:42:73:5B:46:DD:CC:52:60:9F:24:F6:68:3C:50:7C
+         SHA256: C9:59:C5:DE:78:56:0E:A6:60:0D:A1:FC:91:FF:AD:33:11:79:19:94:47:23:B5:70:B7:EE:BE:CE:D7:C7:E8:89
+         签名算法名称: SHA256withRSA
+         版本: 3
+
+扩展:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 3E 79 28 A1 DA 07 DE 6E   50 7D A5 F1 10 52 D1 0A  >y(....nP....R..
+0010: 2D 7E 4F 05                                        -.O.
+]
+]
+
+
+
+wiki: http://wiki.wemart.cn/pages/viewpage.action?pageId=6408784
+api host: shoptest.foreo.cn:8080
+后台：http://shoptest.foreo.cn:8080/management/

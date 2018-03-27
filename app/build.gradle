@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        Signconfig {
+            keyAlias 'foreoasian'
+            keyPassword 'foreo|1234'
+            storeFile file('../keystore/foreokeystore.jks')
+            storePassword 'foreo|1234'
+        }
+    }
+    compileSdkVersion 22
+    defaultConfig {
+        applicationId "com.foreo.foreoasianapp"
+        minSdkVersion 21
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.Signconfig
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.Signconfig
+        }
+
+    }
+}
+
+dependencies {
+//    compile files('libs/libammsdk.jar')
+    compile files('libs/wechat-sdk-android-with-mta-1.0.2.jar')
+/*
+    implementation files('libs/commons-logging-1.1.3.jar')
+*/
+/*    implementation files('libs/json-lib-2.4-jdk15.jar')*/
+    compile files('libs/org.apache.httpcomponents.httpclient_4.5.3.jar')
+/*
+    implementation files('libs/org.apache.httpcomponents.httpcore_4.4.8.jar')
+*/
+
+}
